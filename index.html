@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <h1>Project Management Tool</h1>
+    </header>
+
+    <div class="Dashboard">
+        <h1>Assign Task to your team:</h1>
+    <section id="Task_Management"> 
+    <div id="row_1">
+     <div id="task_assign">
+        <main>
+            <section id="task-form">
+                <h2>Assign Task <i class="bi bi-card-checklist"></i></h2>
+                <div class="task-input">
+                    <input type="text" id="task" placeholder="Enter a task">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+                <section id="task-list">
+                    <h2>Assign Task List <i class="bi bi-list-task"></i></h2>
+                    <ul id="task-list"></ul>
+                </section>
+            </div>
+            <div id="chat_container">
+                <div class="chat-container">
+                    <div class="chat">
+                        <h1>Chat with Team <i class="bi bi-chat-right-dots"></i></h1>
+                        <div class="chat-messages" id="chat-messages">
+                          
+                        </div>
+                        <div class="chat-input">
+                            <select name="team_name" id="team_member">
+                                <option value="name">Suraj</option>
+                                <option value="name">Rajesh Kumar</option>
+                                <option value="name">Gautam Kumar</option>
+                                <option value="name">Niraj Kumar</option>
+                                <option value="name">Prince Patel</option>
+                                <option value="name">Sonalal</option>
+                            </select>
+                            <input type="text" id="message-input" placeholder="Type your message...">
+                            <button id="send-button">Send</button>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+            </section>
+             
+
+        </main>    
+
+        <div id="row_2">
+            <div>
+                <div id="Projects_Progress">
+                    <h1>Update Your Project Progress</h1>
+                    <div class="progress-bar">
+                        <div id="progress" class="progress">0%</div>
+                    </div>
+                    <div id="update-progress">
+                        <input type="number" id="progress-input" min="0" max="100" placeholder="0-100">
+                        <button id="update-button">Update Progress</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <footer><p>Copyright &copy; 2023 All Right Reserved Developed by Mukesh</p></footer>
+     </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
